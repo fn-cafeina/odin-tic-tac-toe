@@ -2,4 +2,4 @@
 
 ## Description
 
-Simple Tic Tac Toe minigame.
+Simple Tic Tac Toe mini-game.
