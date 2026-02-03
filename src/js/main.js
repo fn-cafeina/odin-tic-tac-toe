@@ -18,17 +18,21 @@ const Gameboard = (function () {
     [6, 4, 2],
   ];
 
-  const win = function () {
+  const over = function () {
     for (const comb of combs) {
       if (
         board[comb[0]] === board[comb[1]] &&
         board[comb[1]] === board[comb[2]] &&
         board[comb[0]] !== 0
       ) {
-        return true;
+        return board[comb[0]];
       }
+    }
+
+    if (board.every((i) => i !== 0)) {
+      return "TIE";
     }
   };
 
-  return { draw, win };
+  return { draw, over };
 })();
