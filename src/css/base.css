@@ -3,6 +3,9 @@
 body {
   width: 100vw;
   height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family:
     system-ui,
     -apple-system,
@@ -53,4 +56,15 @@ dialog div {
 
 dialog button {
   font: inherit;
+}
+
+.board {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  border: 1px solid #000;
 }
