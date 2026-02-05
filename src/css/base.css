@@ -20,44 +20,6 @@ body {
     sans-serif;
 }
 
-dialog {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 10px;
-  border: 1px solid #0000009d;
-  border-radius: 10px;
-}
-
-dialog input {
-  font: inherit;
-  border: 1px solid #000;
-  border-radius: 5px;
-}
-
-dialog form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-dialog p {
-  font-size: 1.2rem;
-}
-
-dialog div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-dialog button {
-  font: inherit;
-}
-
 .board {
   display: grid;
   width: 400px;
@@ -66,5 +28,14 @@ dialog button {
 }
 
 .cell {
+  position: relative;
   border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell span {
+  font-size: 3rem;
+  position: absolute;
 }
